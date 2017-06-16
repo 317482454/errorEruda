@@ -1,18 +1,18 @@
-#errorEruda
+## errorEruda
 1kb(gzip)代码搞定开发调试发布，错误监控上报，用户问题定位。
 
 - 支持错误监控和上报
 - 支持 Eruda错误展示
 - 支持开发url拉起Eruda
 
-#安装
+## 安装
 
     <script src="js/errorEruda/errorEruda.js"></script>
 npm暂时未上传可以通过试用
 
 
      import  errorEruda from 'errorEruda/errorEruda'
-#使用方法
+## 使用方法
 
      errorEruda.config({
             jsUrl: '//cdn.jsdelivr.net/eruda/1.2.2/eruda.min.js',//eruda地址
