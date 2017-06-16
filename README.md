@@ -8,7 +8,7 @@
 ## 安装
 
     <script src="js/errorEruda/errorEruda.js"></script>
-npm暂时未上传可以通过试用
+npm暂时未上传可以通过使用
 
 
      import  errorEruda from 'errorEruda/errorEruda'
