@@ -20,7 +20,7 @@ npm暂时未上传可以通过试用
             repMsg: 'test',//错误上报msg前缀，一般用于标识业务类型
             entry: "#app"
         })`
-eruda可以试用cdn当然也支持下载到本地使用
+eruda使用cdn,当然也支持下载到本地使用
 
 
      jsUrl: '/eruda/1.2.2/eruda.min.js',//eruda地址
