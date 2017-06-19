@@ -8,7 +8,7 @@
 ## 安装
 
     <script src="js/errorEruda/errorEruda.js"></script>
-npm暂时未上传可以通过试用
+npm暂时未上传可以通过使用
 
 
      import  errorEruda from 'errorEruda/errorEruda'
@@ -20,7 +20,7 @@ npm暂时未上传可以通过试用
             repMsg: 'test',//错误上报msg前缀，一般用于标识业务类型
             entry: "#app"
         })`
-eruda可以试用cdn当然也支持下载到本地使用
+eruda使用cdn,当然也支持下载到本地使用
 
 
      jsUrl: '/eruda/1.2.2/eruda.min.js',//eruda地址
@@ -28,7 +28,7 @@ eruda可以试用cdn当然也支持下载到本地使用
 
     http://127.0.0.1:3000/?error=ReferenceError:%20asdasdas%20is%20not%20defined%20%20%20%20at%20http://localhost:63342/errorEruda/index.html?errorEruda=show:108:17&repMsg=test
 errorEruda会监听window.onerror并把错误信息保存下来，并且上报到repUrl，你也可以召唤到Eruda并显示出来错误和相关日志。
-#url启动errorEruda
+## url启动errorEruda
 url里带上errorEruda=show 就能显示vConsole面板。如:
 
         http://jqvue.com/demo/errorEruda/index.html?errorEruda=show`
