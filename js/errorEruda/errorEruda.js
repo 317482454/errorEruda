@@ -57,7 +57,7 @@
             window.console.log = function () {
                 _this.store.push({
                     type: 'log',
-                    msg: arguments
+                    msg: arguments[0]
                 })
                 log.apply(console, arguments)
             }
@@ -65,7 +65,7 @@
             window.console.info = function () {
                 _this.store.push({
                     type: 'info',
-                    msg: arguments
+                    msg: arguments[0]
                 })
                 info.apply(console, arguments)
             }
@@ -73,7 +73,7 @@
             window.console.warn = function () {
                 _this.store.push({
                     type: 'warn',
-                    msg: arguments
+                    msg: arguments[0]
                 })
                 warn.apply(console, arguments)
             }
@@ -81,7 +81,7 @@
             window.console.debug = function () {
                 _this.store.push({
                     type: 'debug',
-                    msg: arguments
+                    msg: arguments[0]
                 })
                 debug.apply(console, arguments)
             }
@@ -89,7 +89,7 @@
             window.console.error = function () {
                 _this.store.push({
                     type: 'error',
-                    msg: arguments
+                    msg: arguments[0]
                 })
                 error.apply(console, arguments)
             }
