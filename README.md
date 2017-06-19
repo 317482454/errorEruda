@@ -31,4 +31,4 @@ errorEruda会监听window.onerror并把错误信息保存下来，并且上报�
 ## url启动errorEruda
 url里带上errorEruda=show 就能显示vConsole面板。如:
 
-        http://jqvue.com/demo/errorEruda/index.html?errorEruda=show`
+        http://jqvue.com/demo/errorEruda/index.html?errorEruda=show
