@@ -100,11 +100,15 @@
 <script src="js/errorEruda/errorEruda.js"></script>
 <script>
     errorEruda.config({
-        jsUrl: '/eruda/1.2.2/eruda.min.js',//eruda地址
+        jsUrl: '//cdn.jsdelivr.net/eruda/1.2.2/eruda.min.js',//eruda地址
         repUrl: "http://127.0.0.1:3000/",//错误上报地址
         repMsg: 'test',//错误上报msg前缀，一般用于标识业务类型
         entry: "#app"
     })
+    console.log("log");
+    console.info("info");
+    console.debug("debug");
+    console.warn("warn");
     console.log(asdasdas);
 </script>
 <script>

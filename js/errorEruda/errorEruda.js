@@ -8,7 +8,7 @@
     else
         root["errorEruda"] = factory()
 })(this, function () {
-    return  {
+    return {
         store: [],
         show: false,
         settings: {
@@ -43,9 +43,55 @@
             let _this = this;
             window.onerror = function (msg, url, line, col, error) {
                 _this.store.push({
-                    error
+                    type: 'error',
+                    msg: error
                 });
-               new Image().src =_this.settings.repUrl+'?error='+error.stack+'&repMsg='+_this.settings.repMsg;
+                new Image().src = _this.settings.repUrl + '?error=' + error.stack + '&repMsg=' + _this.settings.repMsg;
+            }
+            var log = window.console.log,
+                info = window.console.info,
+                warn = window.console.warn,
+                debug = window.console.debug,
+                error = window.console.error
+
+            window.console.log = function () {
+                _this.store.push({
+                    type: 'log',
+                    msg: arguments
+                })
+                log.apply(console, arguments)
+            }
+
+            window.console.info = function () {
+                _this.store.push({
+                    type: 'info',
+                    msg: arguments
+                })
+                info.apply(console, arguments)
+            }
+
+            window.console.warn = function () {
+                _this.store.push({
+                    type: 'warn',
+                    msg: arguments
+                })
+                warn.apply(console, arguments)
+            }
+
+            window.console.debug = function () {
+                _this.store.push({
+                    type: 'debug',
+                    msg: arguments
+                })
+                debug.apply(console, arguments)
+            }
+
+            window.console.error = function () {
+                _this.store.push({
+                    type: 'error',
+                    msg: arguments
+                })
+                error.apply(console, arguments)
             }
         },
         entry(selector){
@@ -107,7 +153,7 @@
             eruda.init();
             var erudaConsole = eruda.get('console');
             this.store.forEach((v) => {
-                erudaConsole.error(v.error);
+                erudaConsole[v.type](v.msg);
             });
         }//初始化eruda
     };
