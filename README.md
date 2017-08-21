@@ -4,11 +4,15 @@
 - 支持错误监控和上报
 - 支持 Eruda错误展示
 - 支持开发url拉起Eruda
+- 支持img[src]，script[src]，link[href]请求链接错误监控
+-  支持函数错误捕获
+-  支持XHR请求监控
+-  支持错误浏览器版本号上传
 
 ## 安装
 
-    <script src="js/errorEruda/errorEruda.js"></script>
-npm暂时未上传可以通过使用
+    npm i errorEruda -save
+注意：监控请求链接需要在最头部申明
 
 
      import  errorEruda from 'errorEruda/errorEruda'
@@ -24,11 +28,15 @@ eruda使用cdn,当然也支持下载到本地使用
 
 
      jsUrl: '/eruda/1.2.2/eruda.min.js',//eruda地址
-后台获取error和repMsg
+传输参数：
+error：错误信息
+repMsg：收集系统标识
+browser：浏览器版本号
+type：错误类型（script，link，img，http（XHR请求），TypeError）
+httpState：状态码（XHR独有）
 
-    http://127.0.0.1:3000/?error=ReferenceError:%20asdasdas%20is%20not%20defined%20%20%20%20at%20http://localhost:63342/errorEruda/index.html?errorEruda=show:108:17&repMsg=test
-errorEruda会监听window.onerror并把错误信息保存下来，并且上报到repUrl，你也可以召唤到Eruda并显示出来错误和相关日志。
+![image](./js/errorEruda/demo.png)
 ## url启动errorEruda
-url里带上errorEruda=show 就能显示vConsole面板。如:
+url里带上errorEruda=show 就能显示Console面板。如:
 
-        http://jqvue.com/demo/errorEruda/index.html?errorEruda=show
+        http://jqvue.com/demo/errorEruda/index.html?errorEruda=show`
