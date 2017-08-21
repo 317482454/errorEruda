@@ -1,6 +1,6 @@
 {
   "name": "error_eruda",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "errorEruda.js",
   "description": "Based on errorEruda development and debugging, fault monitoring report, the user location problem.",
   "scripts": {

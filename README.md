@@ -15,7 +15,7 @@
 注意：监控请求链接需要在最头部申明
 
 
-     import  errorEruda from 'errorEruda/errorEruda'
+     import  errorEruda from 'error_eruda'
 ## 使用方法
 
      errorEruda.config({
