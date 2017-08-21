@@ -1,7 +1,7 @@
 {
   "name": "error_eruda",
-  "version": "1.0.3",
-  "main": "errorEruda.js",
+  "version": "1.0.6",
+  "main": "errorEruda.min.js",
   "description": "Based on errorEruda development and debugging, fault monitoring report, the user location problem.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
