@@ -1,7 +1,7 @@
 {
   "name": "errorEruda",
   "version": "1.0.1",
-  "main": "errorEruda.js",
+  "main": "error_Eruda.js",
   "description": "Based on errorEruda development and debugging, fault monitoring report, the user location problem.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,16 +10,12 @@
     "type": "git",
     "url": "https://github.com/317482454/errorEruda"
   },
-  "keywords": [
-    "Eruda",
-    "errorEruda"
-  ],
+  "homepage": "https://github.com/317482454/errorEruda",
+   "bugs": {
+     "url": "https://github.com/317482454/errorEruda/issues/new"
+  },
   "dependencies": {},
   "devDependencies": {},
   "author": "317482454",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/317482454/errorEruda/issues/new"
-  },
-  "homepage": "http://jqvue.com/demo/errorEruda/index.html"
+  "license": "MIT"
 }
