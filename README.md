@@ -1,4 +1,4 @@
-## errorEruda
+## error_eruda
 1kb(gzip)代码搞定开发调试发布，错误监控上报，用户问题定位。
 
 - 支持错误监控和上报
@@ -11,7 +11,7 @@
 
 ## 安装
 
-    npm i errorEruda -save
+    npm i error_eruda -save
 注意：监控请求链接需要在最头部申明
 
 
@@ -35,7 +35,7 @@ browser：浏览器版本号
 type：错误类型（script，link，img，http（XHR请求），TypeError）
 httpState：状态码（XHR独有）
 
-![image](./js/errorEruda/demo.png)
+![image](./demo.png)
 ## url启动errorEruda
 url里带上errorEruda=show 就能显示Console面板。如:
 
